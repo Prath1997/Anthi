@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-20T19:15:20 IST" name="Default suite" finished-at="2021-01-20T19:19:42 IST" duration-ms="261333">
+    <groups>
+      <group name="when Login">
+        <method signature="links.Login()[pri:13, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Login" class="ToolsQA.Anthi.links"/>
+        <method signature="links.change_password()[pri:15, instance:ToolsQA.Anthi.links@2e1d27ba]" name="change_password" class="ToolsQA.Anthi.links"/>
+        <method signature="links.edit_profile()[pri:14, instance:ToolsQA.Anthi.links@2e1d27ba]" name="edit_profile" class="ToolsQA.Anthi.links"/>
+        <method signature="links.logout()[pri:16, instance:ToolsQA.Anthi.links@2e1d27ba]" name="logout" class="ToolsQA.Anthi.links"/>
+        <method signature="links.my_order()[pri:14, instance:ToolsQA.Anthi.links@2e1d27ba]" name="my_order" class="ToolsQA.Anthi.links"/>
+      </group> <!-- when Login -->
+      <group name="social links">
+        <method signature="links.Facebook()[pri:10, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Facebook" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Instagram()[pri:11, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Instagram" class="ToolsQA.Anthi.links"/>
+        <method signature="links.youtube()[pri:12, instance:ToolsQA.Anthi.links@2e1d27ba]" name="youtube" class="ToolsQA.Anthi.links"/>
+      </group> <!-- social links -->
+      <group name="Link">
+        <method signature="links.About_us()[pri:1, instance:ToolsQA.Anthi.links@2e1d27ba]" name="About_us" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Anti_Thinning_Hair_Serum()[pri:8, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Anti_Thinning_Hair_Serum" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Anti_Thinning_Hair_Shampoo()[pri:6, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Anti_Thinning_Hair_Shampoo" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Anti_Thinning_Hair_Spray()[pri:7, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Anti_Thinning_Hair_Spray" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Anti_Thinning_regimen_kit()[pri:9, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Anti_Thinning_regimen_kit" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Blog()[pri:3, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Blog" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Contact_Us()[pri:4, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Contact_Us" class="ToolsQA.Anthi.links"/>
+        <method signature="links.Facts_on_Hair_Thinning()[pri:2, instance:ToolsQA.Anthi.links@2e1d27ba]" name="Facts_on_Hair_Thinning" class="ToolsQA.Anthi.links"/>
+        <method signature="links.ingredients()[pri:5, instance:ToolsQA.Anthi.links@2e1d27ba]" name="ingredients" class="ToolsQA.Anthi.links"/>
+      </group> <!-- Link -->
+    </groups>
+    <test started-at="2021-01-20T19:15:20 IST" name="Default test" finished-at="2021-01-20T19:19:42 IST" duration-ms="261333">
+      <class name="ToolsQA.Anthi.links">
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:20 IST" name="B" finished-at="2021-01-20T19:15:31 IST" duration-ms="10788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="About_us()[pri:1, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:31 IST" name="About_us" finished-at="2021-01-20T19:15:35 IST" duration-ms="3760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- About_us -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:35 IST" name="A" finished-at="2021-01-20T19:15:36 IST" duration-ms="933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:36 IST" name="B" finished-at="2021-01-20T19:15:44 IST" duration-ms="8451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Facts_on_Hair_Thinning()[pri:2, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:44 IST" name="Facts_on_Hair_Thinning" finished-at="2021-01-20T19:15:48 IST" duration-ms="3811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Facts_on_Hair_Thinning -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:48 IST" name="A" finished-at="2021-01-20T19:15:49 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:49 IST" name="B" finished-at="2021-01-20T19:15:58 IST" duration-ms="9191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Blog()[pri:3, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:15:58 IST" name="Blog" finished-at="2021-01-20T19:16:02 IST" duration-ms="3819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blog -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:02 IST" name="A" finished-at="2021-01-20T19:16:03 IST" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:03 IST" name="B" finished-at="2021-01-20T19:16:11 IST" duration-ms="8540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Contact_Us()[pri:4, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:11 IST" name="Contact_Us" finished-at="2021-01-20T19:16:12 IST" duration-ms="1152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contact_Us -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:12 IST" name="A" finished-at="2021-01-20T19:16:13 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:13 IST" name="B" finished-at="2021-01-20T19:16:22 IST" duration-ms="9157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="ingredients()[pri:5, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:22 IST" name="ingredients" finished-at="2021-01-20T19:16:26 IST" duration-ms="3433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingredients -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:26 IST" name="A" finished-at="2021-01-20T19:16:27 IST" duration-ms="767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:27 IST" name="B" finished-at="2021-01-20T19:16:35 IST" duration-ms="8485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Anti_Thinning_Hair_Shampoo()[pri:6, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:35 IST" name="Anti_Thinning_Hair_Shampoo" finished-at="2021-01-20T19:16:40 IST" duration-ms="4979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Anti_Thinning_Hair_Shampoo -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:40 IST" name="A" finished-at="2021-01-20T19:16:41 IST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:41 IST" name="B" finished-at="2021-01-20T19:16:49 IST" duration-ms="8502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Anti_Thinning_Hair_Spray()[pri:7, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:49 IST" name="Anti_Thinning_Hair_Spray" finished-at="2021-01-20T19:16:54 IST" duration-ms="5047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Anti_Thinning_Hair_Spray -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:54 IST" name="A" finished-at="2021-01-20T19:16:55 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:16:55 IST" name="B" finished-at="2021-01-20T19:17:04 IST" duration-ms="8776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Anti_Thinning_Hair_Serum()[pri:8, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:04 IST" name="Anti_Thinning_Hair_Serum" finished-at="2021-01-20T19:17:09 IST" duration-ms="5099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Anti_Thinning_Hair_Serum -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:09 IST" name="A" finished-at="2021-01-20T19:17:10 IST" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:10 IST" name="B" finished-at="2021-01-20T19:17:19 IST" duration-ms="8796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Anti_Thinning_regimen_kit()[pri:9, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:19 IST" name="Anti_Thinning_regimen_kit" finished-at="2021-01-20T19:17:23 IST" duration-ms="4580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Anti_Thinning_regimen_kit -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:23 IST" name="A" finished-at="2021-01-20T19:17:25 IST" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:25 IST" name="B" finished-at="2021-01-20T19:17:33 IST" duration-ms="8493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Facebook()[pri:10, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:33 IST" name="Facebook" finished-at="2021-01-20T19:17:39 IST" duration-ms="5881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Facebook -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:39 IST" name="A" finished-at="2021-01-20T19:17:40 IST" duration-ms="1062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:40 IST" name="B" finished-at="2021-01-20T19:17:49 IST" duration-ms="8643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Instagram()[pri:11, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:49 IST" name="Instagram" finished-at="2021-01-20T19:17:53 IST" duration-ms="4656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Instagram -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:53 IST" name="A" finished-at="2021-01-20T19:17:54 IST" duration-ms="1175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:17:54 IST" name="B" finished-at="2021-01-20T19:18:03 IST" duration-ms="8693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="youtube()[pri:12, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:03 IST" name="youtube" finished-at="2021-01-20T19:18:10 IST" duration-ms="7277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- youtube -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:10 IST" name="A" finished-at="2021-01-20T19:18:11 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:11 IST" name="B" finished-at="2021-01-20T19:18:21 IST" duration-ms="9341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="Login()[pri:13, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:21 IST" name="Login" finished-at="2021-01-20T19:18:29 IST" duration-ms="8623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:29 IST" name="A" finished-at="2021-01-20T19:18:30 IST" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:30 IST" name="B" finished-at="2021-01-20T19:18:39 IST" duration-ms="8643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="edit_profile()[pri:14, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:39 IST" name="edit_profile" finished-at="2021-01-20T19:18:46 IST" duration-ms="7772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit_profile -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:46 IST" name="A" finished-at="2021-01-20T19:18:47 IST" duration-ms="812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:47 IST" name="B" finished-at="2021-01-20T19:18:56 IST" duration-ms="8650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="my_order()[pri:14, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:18:56 IST" name="my_order" finished-at="2021-01-20T19:19:03 IST" duration-ms="7581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- my_order -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:03 IST" name="A" finished-at="2021-01-20T19:19:04 IST" duration-ms="799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:04 IST" name="B" finished-at="2021-01-20T19:19:13 IST" duration-ms="8602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="change_password()[pri:15, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:13 IST" name="change_password" finished-at="2021-01-20T19:19:21 IST" duration-ms="7901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_password -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:21 IST" name="A" finished-at="2021-01-20T19:19:22 IST" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method is-config="true" signature="B()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:22 IST" name="B" finished-at="2021-01-20T19:19:30 IST" duration-ms="8486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method signature="logout()[pri:16, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:30 IST" name="logout" finished-at="2021-01-20T19:19:41 IST" duration-ms="10836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="A()[pri:0, instance:ToolsQA.Anthi.links@2e1d27ba]" started-at="2021-01-20T19:19:41 IST" name="A" finished-at="2021-01-20T19:19:42 IST" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+      </class> <!-- ToolsQA.Anthi.links -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
