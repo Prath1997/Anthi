@@ -19,15 +19,32 @@ public class Demooo {
 	
 	WebDriver driver;
 	String bpath = "https://www.anthinaturals.com/";
+	String username = "prathamesh.4fox@gmail.com";
+	String password = "123456";
 	
+	public void login() throws InterruptedException  {
+		
+			Actions acr=new Actions(driver);
+			acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]")).click();
+			Thread.sleep(1000);
+	}
 	
 	@BeforeMethod
-	public void B(){
+	public void B() throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(bpath);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+//		Actions acr=new Actions(driver);
+//		acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
+//		Thread.sleep(1000);
+//		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/div[1]/a[1]")).click();
+//		Thread.sleep(1000);
+		 
 		
 	}
 	
@@ -37,25 +54,19 @@ public class Demooo {
 		driver.quit();
 	}
 	
-	//Facebook
-			@Test (enabled=true, priority=10,groups="social links")
-			public void Facebook() throws InterruptedException{
-				
-				JavascriptExecutor js = (JavascriptExecutor) driver;  
-				js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-				Thread.sleep(1000);
-				driver.findElement(By.xpath("/html[1]/body[1]/div[12]/div[3]/div[2]/div[2]/div[3]/a[1]/i[1]")).click();
-				Thread.sleep(1000);	
-				
-				// window handle parent to child
-							Set<String> s1=driver.getWindowHandles();
-							 Iterator<String> i1=s1.iterator();
-							 String mainwindow =i1.next();
-							 String ChildWindow=i1.next();
-								Thread.sleep(1000);	
 
-				 Assert.assertEquals(driver.switchTo().window(ChildWindow).findElement(By.xpath("/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]/a[1]/span[1]")).getText(), "Anthi: Naturals");
-//			System.out.println(driver.switchTo().window(ChildWindow).findElement(By.xpath("/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]/a[1]/span[1]")).getText());
-			
-			}				
-}
+	// Blank_valid
+	@Test (enabled=true, priority=7,groups="login")
+	public void Blank_valid() throws InterruptedException{
+	login();
+//		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/form[1]/li[1]/input[1]")).sendKeys(username);			
+//		Thread.sleep(1000);
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/form[1]/li[2]/input[1]")).sendKeys(password);			
+		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/form[1]/li[4]/input[2]")).click();
+		Thread.sleep(1000);
+		Assert.assertEquals(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/form[1]/li[1]/p[1]")).getText(), "Please enter valid Email ID,");
+
+		}	
+
+	}
+

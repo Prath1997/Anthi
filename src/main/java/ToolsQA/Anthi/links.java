@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -23,11 +24,22 @@ public class links {
 	
 	@BeforeMethod
 	public void B(){
+		// chrome driver
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(bpath);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		
+		// firefox driver
+//		@BeforeMethod
+//		public void B(){
+//			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Desktop\\geckodriver.exe");
+//			driver=new FirefoxDriver();
+//			driver.manage().window().maximize();
+//			driver.get(bpath);
+//			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	
@@ -40,54 +52,43 @@ public class links {
 	
 	//About_us
 	@Test (enabled=true, priority=1,groups="Link")
-	public void About_us() throws InterruptedException{
+		public void About_us() throws InterruptedException{
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]")).click();
 		Assert.assertEquals(driver.getCurrentUrl(),"https://www.anthinaturals.com/about");
 		Thread.sleep(1000);		
 	}
 	
 	
-	
-	
-	
 	//Facts_on_Hair_Thinning
 	@Test (enabled=true, priority=2,groups="Link")
-	public void Facts_on_Hair_Thinning() throws InterruptedException{
+		public void Facts_on_Hair_Thinning() throws InterruptedException{
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]")).click();
 		Assert.assertEquals(driver.getCurrentUrl(),"https://www.anthinaturals.com/facts-on-hair-thinning");
 		Thread.sleep(1000);		
 	}
-	
-	
-	
-	
+
 	
 	//Blog
 	@Test (enabled=true, priority=3,groups="Link")
-	public void Blog() throws InterruptedException{
+		public void Blog() throws InterruptedException{
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[6]/a[1]")).click();
 		Assert.assertEquals(driver.getCurrentUrl(),"https://www.anthinaturals.com/blog");
 		Thread.sleep(1000);		
 	}
 	
 	
-	
-	
 	//Contact_Us
 	@Test (enabled=true, priority=4,groups="Link")
-	public void Contact_Us() throws InterruptedException{
+		public void Contact_Us() throws InterruptedException{
 		driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/ul[1]/li[5]/a[1]")).click();
 		//Assert.assertEquals(driver.getTitle(), "Connect with us");
 		Thread.sleep(1000);		
 	}
 	
 	
-	
-	
-	
 	//ingredients
 	@Test (enabled=true, priority=5,groups="Link")
-	public void ingredients() throws InterruptedException{
+		public void ingredients() throws InterruptedException{
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]")).click();
 		Assert.assertEquals(driver.getCurrentUrl(),"https://www.anthinaturals.com/ingredients");
 		Thread.sleep(1000);	
@@ -95,12 +96,9 @@ public class links {
 	}
 	
 	
-
-	
-	
-//	Anti_Thinning_Hair_Shampoo
+	//	Anti_Thinning_Hair_Shampoo
 	@Test (enabled=true, priority=6,groups="Link")
-	public void Anti_Thinning_Hair_Shampoo() throws InterruptedException{
+		public void Anti_Thinning_Hair_Shampoo() throws InterruptedException{
 		
 		Actions acr=new Actions(driver);
 		acr.moveToElement(driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"))).perform();
@@ -112,10 +110,9 @@ public class links {
 	
 	
 	
-	
-//	Anti-Thinning_Hair_Spray
+	//	Anti-Thinning_Hair_Spray
 	@Test (enabled=true, priority=7,groups="Link")
-	public void Anti_Thinning_Hair_Spray() throws InterruptedException{
+		public void Anti_Thinning_Hair_Spray() throws InterruptedException{
 		
 		Actions acr=new Actions(driver);
 		acr.moveToElement(driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"))).perform();
@@ -127,9 +124,9 @@ public class links {
 	
 	
 	
-//	Anti_Thinning_Hair_Serum
+	//	Anti_Thinning_Hair_Serum
 	@Test (enabled=true, priority=8,groups="Link")
-	public void Anti_Thinning_Hair_Serum() throws InterruptedException{
+		public void Anti_Thinning_Hair_Serum() throws InterruptedException{
 		
 		Actions acr=new Actions(driver);
 		acr.moveToElement(driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"))).perform();
@@ -141,10 +138,9 @@ public class links {
 	
 	
 	
-	
-//	Anti_Thinning_regimen_kit
+	//	Anti_Thinning_regimen_kit
 	@Test (enabled=true, priority=9,groups="Link")
-	public void Anti_Thinning_regimen_kit() throws InterruptedException{
+		public void Anti_Thinning_regimen_kit() throws InterruptedException{
 		
 		Actions acr=new Actions(driver);
 		acr.moveToElement(driver.findElement(By.xpath("//body/div[2]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]"))).perform();
@@ -155,13 +151,9 @@ public class links {
 	}
 	
 	
-	
-	
-	
-	
 	//Facebook
 	@Test (enabled=true, priority=10,groups="social links")
-	public void Facebook() throws InterruptedException{
+		public void Facebook() throws InterruptedException{
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;  
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
@@ -180,12 +172,9 @@ public class links {
 //	System.out.println(driver.switchTo().window(ChildWindow).findElement(By.xpath("/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]/a[1]/span[1]")).getText());
 	
 	}	
+			
 		
-		
-		
-		
-		
-		//Instagram
+	//Instagram
 		@Test (enabled=true, priority=11,groups="social links")
 		public void Instagram() throws InterruptedException{
 			JavascriptExecutor js = (JavascriptExecutor) driver;  
@@ -202,9 +191,7 @@ public class links {
 
 					 Assert.assertEquals(driver.switchTo().window(ChildWindow).getTitle(), "Login • Instagram");
 		}
-		
-		
-		
+			
 		
 		//youtube
 		@Test (enabled=true, priority=12,groups="social links")
@@ -226,21 +213,11 @@ public class links {
 						// System.out.println(driver.switchTo().window(ChildWindow).getTitle());  // print result
 			Thread.sleep(1000);			
 		}
-	
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-	// Login popup 
-	
-			@Test (enabled=true, priority=13,groups="when Login")
-			public void Login() throws InterruptedException{
+		// Login popup 
+		@Test (enabled=true, priority=13,groups="Link")
+		public void Login() throws InterruptedException{
 				
 				Actions acr=new Actions(driver);
 				acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
@@ -260,10 +237,10 @@ public class links {
 			}
 			
 			
-			// edit profile 
+		// edit profile 
 			
-			@Test (enabled=true, priority=14,groups="when Login")
-			public void edit_profile() throws InterruptedException{
+	@Test (enabled=true, priority=14,groups="Link", dependsOnMethods="Login")
+		public void edit_profile() throws InterruptedException{
 				
 				Actions acr=new Actions(driver);
 				acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
@@ -277,13 +254,11 @@ public class links {
 				Assert.assertEquals(driver.getCurrentUrl(), "https://www.anthinaturals.com/my-account");
 				Thread.sleep(1000);
 			}
-	
 			
 			
-			// my order
-			
-			@Test (enabled=true, priority=14,groups="when Login")
-			public void my_order() throws InterruptedException{
+		// my order
+	@Test (enabled=true, priority=14,groups="Link", dependsOnMethods="Login")
+		public void my_order() throws InterruptedException{
 				
 				Actions acr=new Actions(driver);
 				acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
@@ -299,10 +274,9 @@ public class links {
 			}
 	
 			
-			// change password
-			
-			@Test (enabled=true, priority=15,groups="when Login")
-			public void change_password() throws InterruptedException{
+		// change password
+@Test (enabled=true, priority=15,groups="Link", dependsOnMethods="Login")
+		public void change_password() throws InterruptedException{
 				
 				Actions acr=new Actions(driver);
 				acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();
@@ -318,10 +292,9 @@ public class links {
 
 			}
 			
-			// logout
-			
-			@Test (enabled=true, priority=16,groups="when Login")
-			public void logout() throws InterruptedException{
+		// logout	
+@Test (enabled=true, priority=16,groups="Link", dependsOnMethods="Login")
+		public void logout() throws InterruptedException{
 				
 				Actions acr=new Actions(driver);
 				acr.moveToElement(driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/a[1]/img[1]"))).perform();

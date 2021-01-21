@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ToolsQA.Anthi.Demooo">
+      <class name="ToolsQA.Anthi.Login">
         <methods>
+          <include name="Blank_valid"/>
+          <include name="Invalid_valid"/>
+          <include name="Invalid_Invalid"/>
           <include name="A"/>
           <include name="B"/>
-          <include name="Facebook"/>
+          <include name="valid_Blank"/>
         </methods>
-      </class> <!-- ToolsQA.Anthi.Demooo -->
+      </class> <!-- ToolsQA.Anthi.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
